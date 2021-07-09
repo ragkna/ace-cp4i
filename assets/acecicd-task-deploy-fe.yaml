@@ -16,7 +16,7 @@ spec:
       description: image name
     - name: license
       description: license number
-      default: L-KSBM-BYGES2 
+      default: L-KSBM-C37JH7 
     - name: tracing_ns
       default: test-cp4i
       description: namespace where OD is installed
@@ -54,7 +54,7 @@ spec:
           license:
             accept: true
             license: $(params.license)
-            use: CloudPakForIntegrationNonProduction
+            use: AppConnectEnterpriseNonProduction
           replicas: 1
           router:
             timeout: 120s

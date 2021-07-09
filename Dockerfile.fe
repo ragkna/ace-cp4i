@@ -1,4 +1,4 @@
-FROM 192.168.1.77:5001/ibmcom/ace-server:11.0.0.12-r1-eus-20210422-114930-amd64
+FROM cp.icr.io/cp/appc/ace-server-prod@sha256:dd1f5112da3b86250efdf66400b29e2fa66a5499bf22068efb2721282513c12d
 COPY Customer /home/aceuser/Customer
 RUN export LICENSE="accept" \
     && source /opt/ibm/ace-11/server/bin/mqsiprofile \
